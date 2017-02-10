@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+   	<meta name="viewport" content="width=device-width, initial-scale=1">
+   	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-datetimepicker.css">
+       
+</head>
+<body>
+
+        <div id="fb-root"></div>
+        <img src = "share_button.png" id = "share" onclick="javascrip:test();">
+
+        <script src="../js/jquery-1.11.3.js"></script>
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({appId: '204215923292122', status: true, cookie: true,
+            xfbml: true});
+            };
+            (function() {
+            var e = document.createElement('script'); e.async = true;
+            e.src = document.location.protocol +
+            '//connect.facebook.net/en_US/all.js';
+            document.getElementById('fb-root').appendChild(e);
+          }());
+        </script>
+        <script type="text/javascript">
+          $(document).ready(function(){
+        });
+            function test(){
+                  window.open('https://www.facebook.com/dialog/feed?app_id=204215923292122&display=popup&name=test&caption=test two&link=http://www.loupper.com/loupperf/vista/veraccion.php?id=379&redirect_uri=http://www.loupper.com/loupperf/vista/veraccion.php?id=379&picture=http://www.loupper.com/loupperf/img/fondobuscar.png');
+                  
+            }
+
+
+        </script>
+</body>
+</html>
